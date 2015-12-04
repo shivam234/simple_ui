@@ -1,0 +1,148 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+	width:100%;
+	height:100%;
+}
+.blocks{
+   height:25%;
+   border:1px solid #eee;
+}
+
+.srch
+{
+	height: 30px;
+	margin: 0 auto;
+	margin-top:50px;
+}
+
+.borderlist {
+    list-style-position:inside;
+    border: 1px solid #424242;
+}
+
+.box
+{
+	background-color:#fff;
+	height:550px;
+	width:auto;
+
+	border: 1px solid #BDBDBD;
+	margin-top:25px;
+	border-radius:5px;
+}
+
+.circle{
+    background: #00BFFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8px;
+    padding: 20px;
+	margin-top:37px;
+	margin-left:20px;
+	display:block;
+}	
+
+.square-radio {
+    border: 3px solid #BDBDBD;
+	border-radius:3px;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.square-radio--clicked .square-radio--content{
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #00BFFF;
+    width: 11px;
+    height: 11px;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #00BFFF;
+    background: #eee;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #00BFFF;
+    background: #eee;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+	
+    #sidebar-wrapper {
+        width: 250px;
+    }
+}

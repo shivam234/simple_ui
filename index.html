@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="borderlist">
+                    <a href="#"><b>User<b><i class="glyphicon glyphicon-user"></i></a>
+                </li>
+                <li>
+				    <div class="borderlist">
+                    <a href="#"><b>Home<b><i class="glyphicon glyphicon-home"></i></a>
+					</div>
+                </li>
+                <li>
+				   <div class="borderlist">
+                    <a href="#"><b>Files<b><i class="glyphicon glyphicon-file"></i></a>
+					</div>
+                </li>
+                <li>
+				      <div class="borderlist">
+                    <a href="#"><b>Messages<b><i class="glyphicon glyphicon-envelope"></i></a>
+					</div>
+                </li>
+                <li>
+				     <div class="borderlist">
+                    <a href="#" ><b>Events<b><i class="glyphicon glyphicon-calendar"></i></a>
+					</div> 
+                </li>
+                <li>
+				     <div class="borderlist">
+                    <a href="#"><b>Comments<b><i class="glyphicon glyphicon-comment"></i></a>
+					</div>
+                </li>
+                <li>
+				     <div class="borderlist" style="border-bottom:2px solid #424242">
+                    <a href="#"><b>Search</b><i class="glyphicon glyphicon-search"></i></a>
+					</div>
+                </li>
+            </ul>
+        </div>    
+			<div class="container">
+				       <div class="srch">
+						<div class="form-group has-feedback">
+                         <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                         <input type="text" class="form-control" placeholder="Search"> 
+			            </div>
+					   </div>
+					<div style="margin-top:2%">
+					   <div style="display:inline-block">
+					    <div class="square-radio">
+                          <div class="square-radio--content"></div>
+                         </div>
+						 Todos
+					    </div>
+						<div style="display:inline-block;margin-left:10px">
+					    <div class="square-radio">
+                         <div class="square-radio--content"></div>
+                        </div>
+						Discussions
+						</div>
+			            <div style="display:inline-block;margin-left:10px">
+					    <div class="square-radio">
+                          <div class="square-radio--content"></div>
+                         </div>
+					     Files		
+						</div>	
+						<div style="display:inline-block;margin-left:10px">
+					    <div class="square-radio">
+                          <div class="square-radio--content"></div>
+                        </div>
+						 Progress
+						</div>
+						<div style="display:inline-block;margin-left:10px">
+					    <div class="square-radio">
+                          <div class="square-radio--content"></div>
+                        </div>
+						Team Members
+						</div>
+				</div>
+			
+				<div class="box">			
+				  <div class="blocks" >
+				   <div class="circle">
+				    <i class="glyphicon glyphicon-file" style="color:#fff"></i>
+				   </div>
+				 </div>
+				 <div class="blocks" >
+				   <div class="circle">
+				    <i class="glyphicon glyphicon-calendar" style="color:#fff"></i>
+				    </div>
+				 </div>
+				 <div class="blocks">
+				   <div class="circle">
+				     <i class="glyphicon glyphicon-envelope" style="color:#fff"></i>
+				   </div>
+				 </div>
+				 <div class="blocks">
+				  <div class="circle">
+				   <i class="glyphicon glyphicon-comment" style="color:#fff"></i>
+				  </div>
+				 </div>
+				</div>
+              </div>            
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+	 $(document).ready(function () {
+     $(document).on("click", ".square-radio", function () {
+        $(this).toggleClass("square-radio--clicked");
+     });
+    }); 
+    </script>
+</body>
+</html>
